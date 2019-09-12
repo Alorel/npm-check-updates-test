@@ -1,0 +1,8 @@
+name: Cronned
+on: push
+jobs:
+  check-update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Alorel/npm-check-updates@02cbbc58e14a34fee22701917518577f0f6f49d5
+        name: Check update
