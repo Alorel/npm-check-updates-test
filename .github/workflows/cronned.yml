@@ -6,5 +6,9 @@ jobs:
   check-update:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@master
+        name: Checkout
+        with:
+          fetch-depth: 1
       - uses: Alorel/npm-check-updates@86158de7c631170e387e91c029c09425b606c834
         name: Check update
