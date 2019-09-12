@@ -1,4 +1,4 @@
-name: Cronned
+name: Pushed
 on: push
 jobs:
   check-update:
