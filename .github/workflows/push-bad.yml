@@ -1,7 +1,5 @@
-name: Cronned job
-on:
-  schedule:
-    - cron:  '* * * * *'
+name: Pushed job (bad)
+on: push
 jobs:
   check-update:
     runs-on: ubuntu-latest
@@ -10,5 +8,5 @@ jobs:
         name: Checkout
         with:
           fetch-depth: 1
-      - uses: Alorel/npm-check-updates@86158de7c631170e387e91c029c09425b606c834
+      - uses: Alorel/npm-check-updates@f8096aa9edc7aa3a39e9c91f220da471ce9338e1
         name: Check update
