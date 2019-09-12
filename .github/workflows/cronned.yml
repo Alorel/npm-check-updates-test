@@ -1,4 +1,4 @@
-name: Cronned
+name: Cronned job
 on:
   schedule:
     - cron:  '* * * * *'
@@ -6,5 +6,5 @@ jobs:
   check-update:
     runs-on: ubuntu-latest
     steps:
-      - uses: Alorel/npm-check-updates@02cbbc58e14a34fee22701917518577f0f6f49d5
+      - uses: Alorel/npm-check-updates@86158de7c631170e387e91c029c09425b606c834
         name: Check update
